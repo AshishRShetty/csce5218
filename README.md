@@ -58,10 +58,30 @@ Each notebook walks through the full pipeline — from data preprocessing, model
 
 (You can install all requirements easily via pip.)
 
+## 📊 Results and Comparison
+
+Both models were fully trained and evaluated separately for clarity and structured understanding.  
+The **Advanced Model** clearly outperforms the Baseline Model across all key metrics.
+
+| Metric    | Baseline Model | Advanced Model |
+|:----------|:--------------:|:--------------:|
+| BLEU-1    | 0.1895          | **0.2370**     |
+| BLEU-2    | 0.0974          | **0.1244**     |
+| BLEU-3    | 0.0547          | **0.0759**     |
+| BLEU-4    | 0.0312          | **0.0516**     |
+| ROUGE-L   | -               | **0.2796**     |
+| METEOR    | -               | **0.2053**     |
+
+The **Advanced Model** achieved consistently higher BLEU scores, indicating better word and phrase matching with ground truth captions. Additionally, ROUGE-L and METEOR metrics further confirmed improved overlap and semantic quality.  
+These improvements are primarily due to the deeper **ResNet101 encoder**, the use of an **attention mechanism** in the decoder, **layer normalization**, and advanced training techniques like **scheduled sampling** and **gradient clipping**.  
+Overall, the Advanced Model generates captions that are more detailed, context-aware, and natural compared to the Baseline Model.
+
+
 ---
 
 # 📬 Contact
 
 Feel free to reach out if you have any questions or suggestions!
+email- ashishrathnakarshetty@my.unt.edu
 
 ---
