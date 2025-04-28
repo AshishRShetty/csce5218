@@ -9,7 +9,6 @@ This repository contains two separate but related projects for **image caption g
 - Built using a **ResNet18 Encoder** and a **simple LSTM Decoder**.
 - Used **scheduled sampling**, **mixed precision training**, and **beam search** for generating captions.
 - Evaluated using **BLEU-1 to BLEU-4** scores.
-- **Training** stopped after 50 epochs once the loss plateaued, to avoid unnecessary computation.
 
 ---
 
@@ -19,6 +18,7 @@ This repository contains two separate but related projects for **image caption g
 - Incorporated **scheduled sampling**, **gradient clipping**, **mixed precision**, and **beam search decoding**.
 - Evaluation included **BLEU**, **ROUGE-L**, and **METEOR** metrics for a more comprehensive performance check.
 - Produced noticeably **higher-quality captions** compared to the baseline.
+- **Training** stopped after 50 epochs once the loss plateaued, to avoid unnecessary computation.
 
 ---
 
