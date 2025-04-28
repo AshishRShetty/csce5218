@@ -1,1 +1,0 @@
-print("ASHISH RATHNAKAR SHETTY")
